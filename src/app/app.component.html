@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<nav>
+  <ul class="navbar nav">
+    <li><a [routerLink]="['welcome']">Accueil</a></li>
+    <li><a [routerLink]="['users']">Utilisateurs</a></li>
+  </ul>
+</nav>
+<div class="container">
+<router-outlet></router-outlet>
+</div>
